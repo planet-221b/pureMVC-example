@@ -1,0 +1,51 @@
+{
+  "name": "puremvc-js-example",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Tigran Balayan <tigran@planet221b.com>",
+  "main": "Game.js",
+  "scripts": {
+    "stats": "webpack --config config/webpack.config.js --env production --profile --json > stats.json",
+    "dev": "npm uninstall @planet221b/pure-mvc && npm i @planet221b/pure-mvc@latest && npm start",
+    "start": "webpack-dev-server --config config/webpack.config.js --host localhost --port 8080",
+    "serve": "serve -p 3000 -s dist --ssl",
+    "lint": "eslint --ext js,jsx src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "exports-loader": "^0.7.0",
+    "expose-loader": "^0.7.5",
+    "git-revision-webpack-plugin": "^2.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "imagemin-webpack-plugin": "^2.4.0",
+    "imports-loader": "^0.8.0",
+    "prettier": "^1.16.3",
+    "serve": "^6.5.8",
+    "tern-phaser": "^0.2.0",
+    "webpack": "^3.12.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-dev-server": "^2.11.3",
+    "webpack-merge": "^4.2.1",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "dependencies": {
+    "@planet221b/pure-mvc": "0.0.91",
+    "babel-polyfill": "^6.26.0",
+    "phaser-ce": "^2.11.1"
+  }
+}

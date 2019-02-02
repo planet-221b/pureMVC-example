@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+.vscode/
+
+yarn.lock
+.idea
+/build/
+stats.json
